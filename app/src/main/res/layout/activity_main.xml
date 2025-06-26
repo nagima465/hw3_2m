@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/AC"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="AC"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plus.mynes"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="+/-"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delenie"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/orange"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:onClick="OnOperationClick"
+        android:text="➗︎"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/divisiob"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="%"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/num_seven"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:onClick="OnNumberClick"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/num_eath"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="OnNumberClick"
+        android:padding="0dp"
+        android:text="8"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/num_nine"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="OnNumberClick"
+        android:padding="0dp"
+        android:text="9"
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/multiplication"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/orange"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:onClick="OnOperationClick"
+        android:text="×"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="294dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/num_four"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:onClick="OnNumberClick"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="4"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/num_fife"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:onClick="OnNumberClick"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/num_six"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/dark_gray"
+        tools:ignore="MissingConstraints"
+        android:insetTop="0dp"
+        android:onClick="OnNumberClick"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/minys"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/orange"
+        tools:ignore="MissingConstraints"
+        android:insetTop="0dp"
+        android:onClick="OnOperationClick"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/one"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="OnNumberClick"
+        android:padding="0dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+    <com.google.android.material.button.MaterialButton
+        tools:ignore="MissingConstraints"
+        android:id="@+id/two"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="OnNumberClick"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/dark_gray"
+        tools:ignore="MissingConstraints"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:onClick="OnNumberClick"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/orange"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        tools:ignore="MissingConstraints"
+        android:text="+"
+        android:onClick="OnOperationClick"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/equals"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/orange"
+        tools:ignore="MissingConstraints"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="="
+        android:onClick="OnOperationClick"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dot"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        tools:ignore="MissingConstraints"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="."
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <FrameLayout
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/delenie"
+        app:layout_constraintEnd_toEndOf="@id/delenie"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/screen_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:onClick="OnNumberClick"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="bottom|end"
+            android:textColor="@color/white"
+            android:textSize="80sp">
+
+        </TextView>
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/zero"
+        android:layout_width="178dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/dark_gray"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="OnNumberClick"
+        android:padding="0dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

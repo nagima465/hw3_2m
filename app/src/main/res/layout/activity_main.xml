@@ -7,6 +7,20 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
+    <Button
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Click"/>
+
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/AC"
         android:layout_width="80dp"
@@ -279,6 +293,16 @@
         android:textSize="32sp"
         tools:layout_editor_absoluteX="294dp"
         tools:layout_editor_absoluteY="635dp" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnShowResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+    android:text="Показать результат"
+    android:visibility="gone"
+    android:layout_marginBottom="16dp"/>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/dot"
